@@ -1,0 +1,13 @@
+# Cargo.toml
+[workspace]
+members = [
+    "hello_world", "primitive",
+]
+resolver = "2" # or "1", depending on your preference
+
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+opt-level = 3
+lto = true    # Enable Link Time Optimization
