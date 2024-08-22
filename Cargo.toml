@@ -1,7 +1,7 @@
 # Cargo.toml
 [workspace]
-members = [
-    "hello_world", "primitive",
+members = [ "collection", "custom_types", "first_lib", "hash_map",
+    "hello_world", "packaging", "primitive", "types", "youtube_temp",
 ]
 resolver = "2" # or "1", depending on your preference
 

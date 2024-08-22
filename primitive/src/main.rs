@@ -10,10 +10,9 @@ fn main() {
 
     // Literal
     println!("1 - 2: {}", 1i32 - 2);
-    println!("one million: {}", 1_000_000u16);
-
+    
     // Tupels
-    let a = ((2, 4, 6, 2), (3.5, "amin"), (true, 1.0, 5.0));
+    let a: ((i32, i32, i32, i32), (f64, &str), (bool, f64, f64)) = ((2, 4, 6, 2), (3.5, "amin"), (true, 1.0, 5.0));
     println!("The value of a.0 is {:#?}", a.0);
     // println!("The value of a.1 is {a.1:#?}");
     // println!("The value of a.2 is {a.2:#?}");
