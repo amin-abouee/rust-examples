@@ -47,11 +47,11 @@ fn main() {
         println!("Word: {k} -> Value: {v}");
     }
 
-    // let filename: Result<File, std::io::Error> = File::open("input.txt");
-    // let output_file = match filename {
-    //     Ok(file) => file,
-    //     Err(error) => panic!("File doesn't exist: {:?}", error),
-    // };
+    let filename: Result<File, std::io::Error> = File::open("input.txt");
+    let _output_file = match filename {
+        Ok(file) => file,
+        Err(error) => panic!("File doesn't exist: {:?}", error),
+    };
 
-    let f1 = File::open("ou.txt").expect("File doesn't exist");
+    let _f1 = File::open("ou.txt").expect("File doesn't exist");
 }
